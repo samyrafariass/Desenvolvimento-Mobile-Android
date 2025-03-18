@@ -40,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Quantidade de Memória:"+ c1.getQtdMemoria());
         Log.i(TAG, "Função:"+ c1.getFuncao());
 
+        Investimento inv = new Investimento("Tesouro Direto", 100.0, 50.0);
+        inv.setInvestimentoAtual("Criptomoedas");
+        inv.setEntradaInvestimento(1000.0);
+        Log.i(TAG, "Investimento atual:"+ inv.getInvestimentoAtual());
+        Log.i(TAG, "Entrada do investiment:"+ inv.getEntradaInvestimento());
+        Log.i(TAG, "Ganhos:"+ inv.getGanhoEmInvestimento());
+
     }
 
 
