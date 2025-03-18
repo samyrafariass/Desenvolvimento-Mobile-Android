@@ -71,7 +71,7 @@ public class ContatoProfissional implements IContato {
         this.assuntoMensagem = assuntoMensagem;
     }
 
-    public void exibirDetalhesVeiculo() {
+    public void exibirDetalhesContatoProfissional() {
          Log.i("Remetente" + remetente + "Modo de Envio" + modoDeEnvio + "Destinatario" + destinatario + "Conteúdo da Mensagem" + conteudoMensagem + "Assunto da Mensagem" + assuntoMensagem + "Prioridade da Mensagem para retorno" + prioridadeRetorno)
     }
 }
