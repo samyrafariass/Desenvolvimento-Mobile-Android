@@ -19,11 +19,12 @@ public class ContatoPessoal implements IContato {
 
     @Override
     public void notificaContato() {
-
+         Log.i("Mensagem nova, verifique!");
     }
 
     @Override
-    public void anotarRecado() {
+    public void anotarRecado(String msg) {
+         Log.i("Sua mensagem foi anotada! Segue a mensagem mandada: " + msg);
 
     }
 
@@ -68,6 +69,6 @@ public class ContatoPessoal implements IContato {
     }
 
     public void exibirDetalhesVeiculo() {
-        Log.i("Veiculo", "cor" + cor + "Modelo" + modelo + "Quantidade de Pneus" + qtdPneu + "Função" + funcao);
+        Log.i("Remetente" + remetente + "Modo de Envio" + modoDeEnvio + "Destinatario" + destinatario + "Conteúdo da Mensagem" + conteudoMensagem + "Assunto da Mensagem" + assuntoMensagem);
     }
 }
