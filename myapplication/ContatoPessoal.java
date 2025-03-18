@@ -68,7 +68,7 @@ public class ContatoPessoal implements IContato {
         this.assuntoMensagem = assuntoMensagem;
     }
 
-    public void exibirDetalhesVeiculo() {
+    public void exibirDetalhesContatoPessoal() {
         Log.i("Remetente" + remetente + "Modo de Envio" + modoDeEnvio + "Destinatario" + destinatario + "Conteúdo da Mensagem" + conteudoMensagem + "Assunto da Mensagem" + assuntoMensagem);
     }
 }
