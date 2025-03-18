@@ -15,16 +15,18 @@ public class Investimento implements Investimentos{
 
     @Override
     public void acompanharInvestimento(String inv) {
-
+        inv = this.investimentoAtual;
     }
 
     @Override
     public float calculaRetornoTotal() {
-        return 0;
+        float retorno = getGanhoEmInvestimento() - getEntradaInvestimento();
+        return retorno;
     }
 
     @Override
     public void identificaInvestimentos() {
+        Log.i("Investimento novo a vista, confira já!");
 
     }
 
@@ -52,7 +54,7 @@ public class Investimento implements Investimentos{
         this.ganhoEmInvestimento = ganhoEmInvestimento;
     }
 
-    public void exibirDetalhesVeiculo() {
-        Log.i("Veiculo", "cor" + cor + "Modelo" + modelo + "Quantidade de Pneus" + qtdPneu + "Função" + funcao);
+    public void exibirDetalhesInvestimento() {
+        Log.i("Ivestimento Atual" + investimentoAtual + "Entrada do Investimento" + entradaInvestimento + "Ganho em Investimento" + ganhoEmInvestimento);
     }
 }
