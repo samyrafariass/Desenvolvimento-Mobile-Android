@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Meio de envio:"+ cpo.getModoDeEnvio());
         Log.i(TAG, "Destinatário:"+ cpo.getDestinatario());
         Log.i(TAG, "Assunto da mensagem:"+ cpo.getAssuntoMensagem());
-        Log.i(TAG, "Prioridade de retorno" + cpo.getPrioridadeRetorno();
+        Log.i(TAG, "Prioridade de retorno" + cpo.getPrioridadeRetorno());
     }
     
     
