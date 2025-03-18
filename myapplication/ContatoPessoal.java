@@ -7,14 +7,12 @@ public class ContatoPessoal implements IContato {
     protected String modoDeEnvio;
     protected String destinatario;
     protected String conteudoMensagem;
-    protected String assuntoMensagem;
 
-    public ContatoPessoal(String remetente, String modoDeEnvio, String destinatario, String conteudoMensagem, String assuntoMensagem) {
+    public ContatoPessoal(String remetente, String modoDeEnvio, String destinatario, String conteudoMensagem) {
         this.remetente = remetente;
         this.modoDeEnvio = modoDeEnvio;
         this.destinatario = destinatario;
         this.conteudoMensagem = conteudoMensagem;
-        this.assuntoMensagem = assuntoMensagem;
     }
 
     @Override
@@ -58,14 +56,6 @@ public class ContatoPessoal implements IContato {
 
     public void setConteudoMensagem(String conteudoMensagem) {
         this.conteudoMensagem = conteudoMensagem;
-    }
-
-    public String getAssuntoMensagem() {
-        return assuntoMensagem;
-    }
-
-    public void setAssuntoMensagem(String assuntoMensagem) {
-        this.assuntoMensagem = assuntoMensagem;
     }
 
     public void exibirDetalhesContatoPessoal() {
