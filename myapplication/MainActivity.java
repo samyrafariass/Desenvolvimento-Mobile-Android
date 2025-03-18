@@ -47,26 +47,25 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Entrada do investiment:"+ inv.getEntradaInvestimento());
         Log.i(TAG, "Ganhos:"+ inv.getGanhoEmInvestimento());
 
-        Financas fi = new Financas();
-        fi.setInvestimentoAtual("Criptomoedas");
-        fi.setEntradaInvestimento(1000.0);
-        Log.i(TAG, "Investimento atual:"+ fi.getInvestimentoAtual());
-        Log.i(TAG, "Entrada do investiment:"+ fi.getEntradaInvestimento());
-        Log.i(TAG, "Ganhos:"+ fi.getGanhoEmInvestimento());
+        Financas fi = new Financas(200.0, 2000.0, 500.0);
+        fi.setGastoSemanal(350.0);
+        Log.i(TAG, "GASTOS SEMANAIS:"+ fi.getGastoSemanal());
+        Log.i(TAG, "GASTOS MENSAIS:"+ fi.getGastoMensal());
+        Log.i(TAG, "TRANSAÇÃO RECENTE:"+ fi.getValorTransacao());
 
-        ContatoPessoal cpe = new ContatoPessoal();
-        cpe.setInvestimentoAtual("Criptomoedas");
-        cpe.setEntradaInvestimento(1000.0);
-        Log.i(TAG, "Investimento atual:"+ cpe.getInvestimentoAtual());
-        Log.i(TAG, "Entrada do investiment:"+ cpe.getEntradaInvestimento());
-        Log.i(TAG, "Ganhos:"+ cpe.getGanhoEmInvestimento());
+        ContatoPessoal cpe = new ContatoPessoal("Julio", "Wpp", "Maria", "Festa de Aniversário");
+        cpe.setAssuntoMensagem("Festa na piscina");
+        Log.i(TAG, "Remetente:"+ cpe.getRemetente());
+        Log.i(TAG, "Meio de envio:"+ cpe.getModoDeEnvio());
+        Log.i(TAG, "Destinatário:"+ cpe.getDestinatario());
+        Log.i(TAG, "Assunto da mensagem:"+ cpe.getAssuntoMensagem());
 
-        ContatoProfissional cpo = new ContatoProfissional();
-        cpo.setInvestimentoAtual("Criptomoedas");
-        cpo.setEntradaInvestimento(1000.0);
-        Log.i(TAG, "Investimento atual:"+ cpo.getInvestimentoAtual());
-        Log.i(TAG, "Entrada do investiment:"+ cpo.getEntradaInvestimento());
-        Log.i(TAG, "Ganhos:"+ cpo.getGanhoEmInvestimento());
+        ContatoProfissional cpo = new ContatoProfissional("Maria", "Email", "Mário", "Vaga de Emprego", "Retorno imediato");
+        Log.i(TAG, "Remetente:"+ cpo.getRemetente());
+        Log.i(TAG, "Meio de envio:"+ cpo.getModoDeEnvio());
+        Log.i(TAG, "Destinatário:"+ cpo.getDestinatario());
+        Log.i(TAG, "Assunto da mensagem:"+ cpo.getAssuntoMensagem());
+        Log.i(TAG, "Prioridade de retorno" + cpo.getPrioridadeRetorno();
     }
     
     
