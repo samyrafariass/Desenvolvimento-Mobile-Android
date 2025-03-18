@@ -8,22 +8,26 @@ public class ContatoProfissional implements IContato {
     protected String destinatario;
     protected String conteudoMensagem;
     protected String assuntoMensagem;
+    protected String prioridadeRetorno;
 
-    public ContatoProfissional(String remetente, String modoDeEnvio, String destinatario, String conteudoMensagem, String assuntoMensagem) {
+    public ContatoProfissional(String remetente, String modoDeEnvio, String destinatario, String conteudoMensagem, String assuntoMensagem, String prioridadeRetorno) {
         this.remetente = remetente;
         this.modoDeEnvio = modoDeEnvio;
         this.destinatario = destinatario;
         this.conteudoMensagem = conteudoMensagem;
         this.assuntoMensagem = assuntoMensagem;
+        this.prioridadeRetorno = prioridadeRetorno;
     }
 
     @Override
     public void notificaContato() {
+        Log.i("Nova mensagem do setor de TI, VERIFIQUE!");
 
     }
 
     @Override
-    public void anotarRecado() {
+    public void anotarRecado(String msg) {
+          Log.i("Segue recado deixado pelo TI:" + msg);
 
     }
 
@@ -68,6 +72,6 @@ public class ContatoProfissional implements IContato {
     }
 
     public void exibirDetalhesVeiculo() {
-        Log.i("Veiculo", "cor" + cor + "Modelo" + modelo + "Quantidade de Pneus" + qtdPneu + "Função" + funcao);
+         Log.i("Remetente" + remetente + "Modo de Envio" + modoDeEnvio + "Destinatario" + destinatario + "Conteúdo da Mensagem" + conteudoMensagem + "Assunto da Mensagem" + assuntoMensagem + "Prioridade da Mensagem para retorno" + prioridadeRetorno)
     }
 }
