@@ -47,7 +47,27 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Entrada do investiment:"+ inv.getEntradaInvestimento());
         Log.i(TAG, "Ganhos:"+ inv.getGanhoEmInvestimento());
 
+        Financas fi = new Financas();
+        fi.setInvestimentoAtual("Criptomoedas");
+        fi.setEntradaInvestimento(1000.0);
+        Log.i(TAG, "Investimento atual:"+ fi.getInvestimentoAtual());
+        Log.i(TAG, "Entrada do investiment:"+ fi.getEntradaInvestimento());
+        Log.i(TAG, "Ganhos:"+ fi.getGanhoEmInvestimento());
+
+        ContatoPessoal cpe = new ContatoPessoal();
+        cpe.setInvestimentoAtual("Criptomoedas");
+        cpe.setEntradaInvestimento(1000.0);
+        Log.i(TAG, "Investimento atual:"+ cpe.getInvestimentoAtual());
+        Log.i(TAG, "Entrada do investiment:"+ cpe.getEntradaInvestimento());
+        Log.i(TAG, "Ganhos:"+ cpe.getGanhoEmInvestimento());
+
+        ContatoProfissional cpo = new ContatoProfissional();
+        cpo.setInvestimentoAtual("Criptomoedas");
+        cpo.setEntradaInvestimento(1000.0);
+        Log.i(TAG, "Investimento atual:"+ cpo.getInvestimentoAtual());
+        Log.i(TAG, "Entrada do investiment:"+ cpo.getEntradaInvestimento());
+        Log.i(TAG, "Ganhos:"+ cpo.getGanhoEmInvestimento());
     }
-
-
+    
+    
 }
