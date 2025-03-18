@@ -15,16 +15,18 @@ public class Financas implements IFinancas{
 
     @Override
     public void acompanharDespesa() {
-
+        Log.i("Visualize suas despesas: " + "Gasto Semanal" + gastoSemanal + "Gasto Mensal" + gastoMensal);
     }
 
     @Override
     public float calcularSaldo() {
-        return 0;
+        float saldo = gastoMensal + gastoSemanal;
+        return saldo;
     }
 
     @Override
     public void identificaTransacoes() {
+        Log.i("Última transação realizada" + valorTrasacao);
 
     }
 
@@ -52,7 +54,7 @@ public class Financas implements IFinancas{
         this.valorTrasacao = valorTrasacao;
     }
 
-    public void exibirDetalhesVeiculo() {
-        Log.i("Veiculo", "cor" + cor + "Modelo" + modelo + "Quantidade de Pneus" + qtdPneu + "Função" + funcao);
+    public void exibirDetalhesFinancas() {
+        Log.i("GASTOS", "Semanal" + gastoSemanal + "Mensal" + gastoMensal + "Trasação realizada recentemente" + valorTransacao);
     }
 }
