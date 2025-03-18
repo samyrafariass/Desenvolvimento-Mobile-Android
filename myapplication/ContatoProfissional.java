@@ -7,15 +7,13 @@ public class ContatoProfissional implements IContato {
     protected String modoDeEnvio;
     protected String destinatario;
     protected String conteudoMensagem;
-    protected String assuntoMensagem;
     protected String prioridadeRetorno;
 
-    public ContatoProfissional(String remetente, String modoDeEnvio, String destinatario, String conteudoMensagem, String assuntoMensagem, String prioridadeRetorno) {
+    public ContatoProfissional(String remetente, String modoDeEnvio, String destinatario, String conteudoMensagem, String prioridadeRetorno) {
         this.remetente = remetente;
         this.modoDeEnvio = modoDeEnvio;
         this.destinatario = destinatario;
         this.conteudoMensagem = conteudoMensagem;
-        this.assuntoMensagem = assuntoMensagem;
         this.prioridadeRetorno = prioridadeRetorno;
     }
 
@@ -61,14 +59,6 @@ public class ContatoProfissional implements IContato {
 
     public void setConteudoMensagem(String conteudoMensagem) {
         this.conteudoMensagem = conteudoMensagem;
-    }
-
-    public String getAssuntoMensagem() {
-        return assuntoMensagem;
-    }
-
-    public void setAssuntoMensagem(String assuntoMensagem) {
-        this.assuntoMensagem = assuntoMensagem;
     }
 
     public void exibirDetalhesContatoProfissional() {
